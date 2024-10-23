@@ -1,8 +1,9 @@
 import { View, Text } from "react-native"
+import { SafeAreaView } from "react-native-safe-area-context"
 function accountInfo() {
     return (
         <View>
-            <Text>Account Info Page</Text>
+            <Text style={{ color: 'black' }}>Account Info Page</Text>
         </View>
     )
 }

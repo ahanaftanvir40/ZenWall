@@ -1,6 +1,4 @@
-import { Slot, Link, Tabs } from "expo-router"
-import { Text, View } from "react-native"
-import { SafeAreaView } from "react-native-safe-area-context"
+import { Tabs } from "expo-router"
 import { FontAwesome } from "@expo/vector-icons"
 
 function _layout() {

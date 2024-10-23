@@ -1,6 +1,8 @@
 import { View, Text } from 'react-native'
 
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+import { SafeAreaView } from 'react-native-safe-area-context';
+
 
 const Tab = createMaterialTopTabNavigator();
 
@@ -8,11 +10,15 @@ function index() {
 
 
     return (
-        <Tab.Navigator>
-            <Tab.Screen name='Library' component={Library} />
-            <Tab.Screen name='Liked' component={Liked} />
-            <Tab.Screen name='Suggested' component={Suggested} />
-        </Tab.Navigator>
+        <>
+            <SafeAreaView>
+            </SafeAreaView>
+            <Tab.Navigator>
+                <Tab.Screen name='Library' component={Library} />
+                <Tab.Screen name='Liked' component={Liked} />
+                <Tab.Screen name='Suggested' component={Suggested} />
+            </Tab.Navigator>
+        </>
     )
 }
 
